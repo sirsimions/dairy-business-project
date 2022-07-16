@@ -20,6 +20,17 @@ body{
     display: flex;
     top: 13%;
 }
+.daily{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: space-around;
+    width: 25%;
+    border: 1px solid black;
+    height: 40%;
+    left: 5%;
+    padding: 1.5%;
+}
  
  .formhead{
     display: flex;
