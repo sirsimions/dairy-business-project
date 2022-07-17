@@ -1,3 +1,41 @@
+var butt1 = document.getElementById('butt1');
+butt1.addEventListener("onclick", totalproduction);
+
+function totalproduction(){
+    
+    var shedA = document.getElementById("sheda").value;
+    var shedB = document.getElementById("shedb").value;
+    var shedC = document.getElementById("shedc").value;
+    var shedD = document.getElementById("shedd").value;
+   
+    var a = shedA *7;
+    var b = shedB *7;
+    var c = shedC *7;
+    var d = shedD *7;
+    let p1 = "Your production in Shed A is " + a + " litres per day";
+    let p2 = "Your production in Shed A is " + b + " litres per day";
+    let p3 = "Your production in Shed A is " + c + " litres per day";
+    let p4 = "Your production in Shed A is " + d + " litres per day";
+
+    document.getElementById("outputa").innerHTML=p1;
+    document.getElementById("outputb").innerHTML=p2;
+    document.getElementById("outputc").innerHTML=p3;
+    document.getElementById("outputd").innerHTML=p4;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 var butt = document.getElementById('but1');
 butt.addEventListener("onclick", tabRows);
 
