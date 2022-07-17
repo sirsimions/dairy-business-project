@@ -7,41 +7,43 @@ function totalproduction(){
     var shedB = document.getElementById("shedb").value;
     var shedC = document.getElementById("shedc").value;
     var shedD = document.getElementById("shedd").value;
-    var time = document.getElementById("tm").value;
-    var price = document.getElementById("wk").value;
+    var prce = document.getElementById("wk").value;
+    var tme = document.getElementById("tm").value;
    
     var a = shedA *1;
     var b = shedB *1;
     var c = shedC *1;
     var d = shedD *1;
-    var prc = price*1;
-    var tim = time*1;
-    var tot = shedA *prc + shedB *prc +shedC *prc + shedD *prc;
-    var totIncome = tot*tim;
+    var totMilk = a + b + c + d;
+    var time = tme*1;
+    var price = prce*1;
 
-    
-    
+    var totIncome = totMilk*price;
+
     let p1 = "Your production in Shed A is " + a + " litres per day";
     let p2 = "Your production in Shed B is " + b + " litres per day";
     let p3 = "Your production in Shed C is " + c + " litres per day";
     let p4 = "Your production in Shed D is " + d + " litres per day";
-    
+    let p5 = "Your total milk production is " + totMilk + " litres per day";
 
     document.getElementById("outputa").innerHTML=p1;
     document.getElementById("outputb").innerHTML=p2;
     document.getElementById("outputc").innerHTML=p3;
     document.getElementById("outputd").innerHTML=p4;
     document.getElementById("outpute").innerHTML=p5;
-    
-}
-if(tim===7){
-    let p5 = "Your Weekly income will be Ksh. "+ totIncome + " only";
-}
-  else if(tim===28 || tim===30 || tim===31){
-    let p5 = "Your monthly income will be Ksh. "+ totIncome + " only";
-}
-  else{ 
-    let p5 = "Your income for the selected time period will be Ksh. "+ totIncome + " only";
+    document.getElementById("outputf").innerHTML=p6;
+
+     let p6;
+    if(time===7){
+        p6 = "Your weekly income will be Ksh." + totIncome + "only";
+    }
+      else if(time===28 || time ===29 || time === 30 || time === 31){
+        p6 = "Your monthly income will be Ksh." + totIncome + "only";
+      }
+        else { p6 = "Your income for the defined time period will be " + totIncome + "only";
+
+        }
+
 }
 
 
@@ -93,5 +95,4 @@ function tabRows(){
         row++;
         r++;
     }
-
 
