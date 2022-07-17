@@ -9,7 +9,11 @@ function totalproduction(){
     var shedD = document.getElementById("shedd").value;
     var prce = document.getElementById("wk").value;
     var tme = document.getElementById("tm").value;
-   
+    var wkly = document.getElementById("wkl").value;
+    var yrly = document.getElementById("yrl").value;
+
+    var year = yrly*365;
+    var weeks = wkly*7;
     var a = shedA *1;
     var b = shedB *1;
     var c = shedC *1;
@@ -18,13 +22,18 @@ function totalproduction(){
     var time = tme*1;
     var price = prce*1;
 
-    var totIncome = totMilk*price;
+    var totIncome = totMilk*time*price;
+    var totIncomeWeek = totMilk*weeks*price;
+    var totIncomeYear = totMilk*year*price;
 
     let p1 = "Your production in Shed A is " + a + " litres per day";
     let p2 = "Your production in Shed B is " + b + " litres per day";
     let p3 = "Your production in Shed C is " + c + " litres per day";
     let p4 = "Your production in Shed D is " + d + " litres per day";
     let p5 = "Your total milk production is " + totMilk + " litres per day";
+    let p6 = "Your total income for " + time + " days is Ksh." + totIncome + "";
+    let p7 = "Your total income for " + weeks/7 + " week(s) is Ksh." + totIncomeWeek + "";
+    let p8 = "Your total income for " + year/365 + " year(s) is Ksh." + totIncomeYear + "";
 
     document.getElementById("outputa").innerHTML=p1;
     document.getElementById("outputb").innerHTML=p2;
@@ -32,17 +41,10 @@ function totalproduction(){
     document.getElementById("outputd").innerHTML=p4;
     document.getElementById("outpute").innerHTML=p5;
     document.getElementById("outputf").innerHTML=p6;
+    document.getElementById("outputg").innerHTML=p7;
+    document.getElementById("outputh").innerHTML=p8;
 
-     let p6;
-    if(time===7){
-        p6 = "Your weekly income will be Ksh." + totIncome + "only";
-    }
-      else if(time===28 || time ===29 || time === 30 || time === 31){
-        p6 = "Your monthly income will be Ksh." + totIncome + "only";
-      }
-        else { p6 = "Your income for the defined time period will be " + totIncome + "only";
-
-        }
+     
 
 }
 
