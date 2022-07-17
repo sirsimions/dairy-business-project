@@ -42,7 +42,14 @@ body{
     height: 15%;
     left: 5%;
     padding: 1.5%;
+}
 
+.gen{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 500px;
+    top: 40;
 }
 #outputs{
     display: flex;

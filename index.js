@@ -7,21 +7,41 @@ function totalproduction(){
     var shedB = document.getElementById("shedb").value;
     var shedC = document.getElementById("shedc").value;
     var shedD = document.getElementById("shedd").value;
+    var time = document.getElementById("tm").value;
+    var price = document.getElementById("wk").value;
    
-    var a = shedA *7;
-    var b = shedB *7;
-    var c = shedC *7;
-    var d = shedD *7;
+    var a = shedA *1;
+    var b = shedB *1;
+    var c = shedC *1;
+    var d = shedD *1;
+    var prc = price*1;
+    var tim = time*1;
+    var tot = shedA *prc + shedB *prc +shedC *prc + shedD *prc;
+    var totIncome = tot*tim;
+
+    
+    
     let p1 = "Your production in Shed A is " + a + " litres per day";
-    let p2 = "Your production in Shed A is " + b + " litres per day";
-    let p3 = "Your production in Shed A is " + c + " litres per day";
-    let p4 = "Your production in Shed A is " + d + " litres per day";
+    let p2 = "Your production in Shed B is " + b + " litres per day";
+    let p3 = "Your production in Shed C is " + c + " litres per day";
+    let p4 = "Your production in Shed D is " + d + " litres per day";
+    
 
     document.getElementById("outputa").innerHTML=p1;
     document.getElementById("outputb").innerHTML=p2;
     document.getElementById("outputc").innerHTML=p3;
     document.getElementById("outputd").innerHTML=p4;
-
+    document.getElementById("outpute").innerHTML=p5;
+    
+}
+if(tim===7){
+    let p5 = "Your Weekly income will be Ksh. "+ totIncome + " only";
+}
+  else if(tim===28 || tim===30 || tim===31){
+    let p5 = "Your monthly income will be Ksh. "+ totIncome + " only";
+}
+  else{ 
+    let p5 = "Your income for the selected time period will be Ksh. "+ totIncome + " only";
 }
 
 
