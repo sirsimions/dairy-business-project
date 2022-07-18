@@ -10,16 +10,38 @@ body{
     justify-content: space-around;
     background-color: rgb(99, 74, 74);
     color: white;
-
-}   
-.bar{
+ }  
+ #nav{
+    height: 15%;
+    width: 100%;
+    border: 1px solid grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(99, 74, 74);
+    color: white;
+ }
+ .bar{
     padding-top: 2%;
     text-decoration: none;
     color: white; 
     position: relative; 
     display: flex;
     top: 13%;
-}
+ }
+
+ div.bar1{
+    padding: 0.4%;
+    text-decoration: none;
+    color: white; 
+    position: relative; 
+    display: flex;
+    top: -1%;
+    font-weight: 700;
+    font-family: 'Gill Sans' sans-serif;
+    font-size: x-large;
+
+ }
 .daily{
     display: flex;
     flex-direction: column;
@@ -53,12 +75,12 @@ body{
 #outputs{
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 35%;
     height: 40%;
     position: absolute;
     top: 25%;
     left: 50%;
-    background-color: rgb(215, 228, 228);
+    
 
 }
 #outputs2{
@@ -69,13 +91,18 @@ body{
     position: absolute;
     top: -5%;
     left: 210%;
-    background-color: rgb(215, 228, 228);
+    
 }
 .outarea{ 
     display: flex;
     justify-content: space-between;
     padding: 2%;
 
+}
+.outarea1{ 
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
 }
 .h4{
     display: flex;
@@ -87,6 +114,7 @@ body{
     position: relative;
     width: 60%;
     left: 5%;
+    
  }
  .formhead2{
     display: flex;
@@ -106,7 +134,7 @@ body{
     padding: 3%;
     left: 5%;
     top: 20%;
-    
+
 }
 
 #inputs{
@@ -133,5 +161,13 @@ body{
     flex-direction: row;
     position: relative;
     top: 22%;
-
+    width: 80%;
+}
+ .page{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 100px;
+    top: 5%;
+    width: 20%;
 }

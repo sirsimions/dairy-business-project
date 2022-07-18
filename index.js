@@ -93,7 +93,7 @@ function totalproduction(){
        
        let m1 = "Your income for January is Ksh." + janIcome + " ";
        let m2 = "Your income for February is Ksh." + febIcome + " ";
-       let m3 = "Your income for March is Ksj." + maIcome + " ";
+       let m3 = "Your income for March is Ksh." + maIcome + " ";
        let m4 = "Your income for April is Ksh." + aprIcome + " ";
        let m5 = "Your income for May is Ksh." + mayIcome + " ";
        let m6 = "Your income for June is Ksh." + junIcome + " ";
@@ -114,11 +114,11 @@ function totalproduction(){
     document.getElementById("otputf").innerHTML=m6;
     document.getElementById("otputg").innerHTML=m7;
     document.getElementById("otputh").innerHTML=m8;
-    document.getElementById("otputa").innerHTML=m9;
-    document.getElementById("otputb").innerHTML=m10;
-    document.getElementById("otputc").innerHTML=m11;
-    document.getElementById("otputd").innerHTML=p4;
-    document.getElementById("otpute").innerHTML=m12;
+    document.getElementById("otputi").innerHTML=m9;
+    document.getElementById("otputj").innerHTML=m10;
+    document.getElementById("otputk").innerHTML=m11;
+    document.getElementById("otputl").innerHTML=m4;
+    document.getElementById("otputm").innerHTML=m12;
 
       }
     
