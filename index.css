@@ -3,24 +3,30 @@ body{
 }
 #nav{
     height: 15%;
-    width: 100%;
+    width: 97%;
     border: 1px solid grey;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     background-color: rgb(99, 74, 74);
     color: white;
+    margin-left: 1.6%;
  }  
- #nav{
+ #footer{
     height: 15%;
-    width: 100%;
+    width: 95%;
     border: 1px solid grey;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     background-color: rgb(99, 74, 74);
     color: white;
+    position: relative;
+    top: 5%;
+    justify-self: center;
+    margin-left: 2.5%;
  }
+ 
  .bar{
     padding-top: 2%;
     text-decoration: none;
@@ -155,6 +161,7 @@ body{
     left: 5%;
     margin-top: 2%;
     padding: 1.5%;
+    
 }
 .refs{
     display: flex;
