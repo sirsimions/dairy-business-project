@@ -44,11 +44,86 @@ function totalproduction(){
     document.getElementById("outputg").innerHTML=p7;
     document.getElementById("outputh").innerHTML=p8;
 }
+ 
+ var monthBtt = document.getElementById('mbtn');
+ monthBtt.addEventListener("onclick", monthlProd);
+
+ 
+ function monthlProd(){
+    
+    
+        janu = document.getElementById("jan").value;
+        febr = document.getElementById("feb").value;
+        marc = document.getElementById("mar").value;
+        apri = document.getElementById("apr").value;
+        mays = document.getElementById("may").value;
+        june = document.getElementById("jun").value;
+        july = document.getElementById("jul").value;
+        augu = document.getElementById("aug").value;
+        sept = document.getElementById("sep").value;
+        octo = document.getElementById("oct").value;
+        nove = document.getElementById("nov").value;
+        dece = document.getElementById("dec").value;
+
+        var totj = janu*1;
+        var totf = febr*1;
+        var totm = marc*1;
+        var tota = apri*1;
+        var totmay = mays*1;
+        var totju = june*1;
+        var totjul = july*1;
+        var totau = augu*1;
+        var tots = sept*1
+        var toto = octo*1
+        var totno =nove*1
+        var totdec =dece*1
+
+       var janIcome = totj*450;
+       var febIcome = totf*450;
+       var maIcome = totm*450;
+       var aprIcome = tota*450;
+       var mayIcome = totmay*450;
+       var junIcome = totju*450;
+       var julIcome = totjul*450;
+       var augIcome = totau*450;
+       var sepIcome = tots*450;
+       var octIcome = toto*450;
+       var nocIcome = totno*450;
+       var decIcome= totdec*450;
+       
+       let m1 = "Your income for January is Ksh." + janIcome + " ";
+       let m2 = "Your income for February is Ksh." + febIcome + " ";
+       let m3 = "Your income for March is Ksj." + maIcome + " ";
+       let m4 = "Your income for April is Ksh." + aprIcome + " ";
+       let m5 = "Your income for May is Ksh." + mayIcome + " ";
+       let m6 = "Your income for June is Ksh." + junIcome + " ";
+       let m7 = "Your income for July is Ksh." + julIcome + " ";
+       let m8 = "Your income for August is Ksh." + augIcome + " ";
+       let m9 = "Your income for September is Ksh." + sepIcome + " ";
+       let m10 = "Your income for October is Ksh." + octIcome + " ";
+       let m11= "Your income for November is Ksh." + nocIcome + " ";
+       let m12 ="Your income for December is Ksh." + decIcome + " ";
+       
 
 
+    document.getElementById("otputa").innerHTML=m1;
+    document.getElementById("otputb").innerHTML=m2;
+    document.getElementById("otputc").innerHTML=m3;
+    document.getElementById("otputd").innerHTML=m4;
+    document.getElementById("otpute").innerHTML=m5;
+    document.getElementById("otputf").innerHTML=m6;
+    document.getElementById("otputg").innerHTML=m7;
+    document.getElementById("otputh").innerHTML=m8;
+    document.getElementById("otputa").innerHTML=m9;
+    document.getElementById("otputb").innerHTML=m10;
+    document.getElementById("otputc").innerHTML=m11;
+    document.getElementById("otputd").innerHTML=p4;
+    document.getElementById("otpute").innerHTML=m12;
 
+      }
+    
 
-
+ 
 
 
 
