@@ -52,18 +52,18 @@ function totalproduction(){
  function monthlProd(){
     
     
-        janu = document.getElementById("jan").value;
-        febr = document.getElementById("feb").value;
-        marc = document.getElementById("mar").value;
-        apri = document.getElementById("apr").value;
-        mays = document.getElementById("may").value;
-        june = document.getElementById("jun").value;
-        july = document.getElementById("jul").value;
-        augu = document.getElementById("aug").value;
-        sept = document.getElementById("sep").value;
-        octo = document.getElementById("oct").value;
-        nove = document.getElementById("nov").value;
-        dece = document.getElementById("dec").value;
+        var janu = document.getElementById("jan").value;
+        var febr = document.getElementById("feb").value;
+        var marc = document.getElementById("mar").value;
+        var apri = document.getElementById("apr").value;
+        var mays = document.getElementById("may").value;
+        var june = document.getElementById("jun").value;
+        var july = document.getElementById("jul").value;
+        var augu = document.getElementById("aug").value;
+        var sept = document.getElementById("sep").value;
+        var octo = document.getElementById("oct").value;
+        var nove = document.getElementById("nov").value;
+        var dece = document.getElementById("dec").value;
 
         var totj = janu*1;
         var totf = febr*1;
@@ -117,8 +117,7 @@ function totalproduction(){
     document.getElementById("otputi").innerHTML=m9;
     document.getElementById("otputj").innerHTML=m10;
     document.getElementById("otputk").innerHTML=m11;
-    document.getElementById("otputl").innerHTML=m4;
-    document.getElementById("otputm").innerHTML=m12;
+    document.getElementById("otputl").innerHTML=m12;
 
       }
     
